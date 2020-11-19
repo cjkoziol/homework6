@@ -9,6 +9,7 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	video.play();
+	volume.innerHTML = "100%";
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
@@ -42,11 +43,11 @@ document.querySelector("#mute").addEventListener("click", function() {
 	console.log("Mute");
 	if (video.muted){
 		video.muted = false;
-			mute.innerHTML = "muted";
+			mute.innerHTML = "mute";
 	}
 	else {
 		video.muted = true;
-		mute.innerHTML = "unmuted";
+		mute.innerHTML = "unmute";
 	}
 });
 
